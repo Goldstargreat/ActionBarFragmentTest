@@ -33,23 +33,27 @@ public class MyTabFragment extends Fragment{
         baseLayout.setGravity(Gravity.CENTER);
 
         ImageView img1 = new ImageView(super.getActivity());
-        img1.setImageResource(R.drawable.spring);
+        img1.setImageResource(R.drawable.dog);
         img1.setAdjustViewBounds(true);
 
         baseLayout.addView(img1);
 
-        if (tabName.equals("Spring")) {
+        if (tabName.equals("Dog")) {
             baseLayout.setBackgroundColor(Color.GREEN);
-            img1.setImageResource(R.drawable.spring);
+            img1.setImageResource(R.drawable.dog);
         }
-        if (tabName.equals("Summer")){
+        if (tabName.equals("Cat")){
             baseLayout.setBackgroundColor(Color.RED);
-            img1.setImageResource(R.drawable.summer);
+            img1.setImageResource(R.drawable.cat);
         }
 
-        if (tabName.equals("Fall")){
+        if (tabName.equals("Horse")){
             baseLayout.setBackgroundColor(Color.rgb(204, 114, 61));
-            img1.setImageResource(R.drawable.fall);
+            img1.setImageResource(R.drawable.horse);
+        }
+        if (tabName.equals("Rabbit")){
+            baseLayout.setBackgroundColor(Color.RED);
+            img1.setImageResource(R.drawable.rabbit);
         }
 
 
