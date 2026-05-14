@@ -48,6 +48,10 @@ public class MyTabFragment extends Fragment {
             baseLayout.setBackgroundColor(Color.rgb(204, 114, 61));
             img1.setImageResource(R.drawable.horse);
         }
+        if (tabName.equals("Rabbit")) {
+            baseLayout.setBackgroundColor(Color.YELLOW);
+            img1.setImageResource(R.drawable.rabbit);
+        }
 
         return baseLayout;
     }

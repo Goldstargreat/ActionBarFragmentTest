@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity implements ActionBar.TabListener {
-    ActionBar.Tab tab1, tab2, tab3;
+    ActionBar.Tab tab1, tab2, tab3, tab4;
     @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         tab3.setText("Horse");
         tab3.setTabListener(this);
         bar.addTab(tab3);
+
+        tab4 = bar.newTab();
+        tab4.setText("Rabbit");
+        tab4.setTabListener(this);
+        bar.addTab(tab4);
     }
 
     @Override
